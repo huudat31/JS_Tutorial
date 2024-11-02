@@ -83,53 +83,87 @@
 //   console.log(numb);
 
 
-const fruits = new Map(
-    [
-        ["Apples",1],
-        ["Oranges", 200],
-        ["Bananas", 300]
-    ]
-)
-// return value of key
-console.log(fruits.get("Apples"));
+// const fruits = new Map(
+//     [
+//         ["Apples",1],
+//         ["Oranges", 200],
+//         ["Bananas", 300]
+//     ]
+// )
+// // return value of key
+// console.log(fruits.get("Apples"));
 
-// set value of key
-fruits.set("Apples", 2);
-console.log(fruits.set("Apples",3330));
+// // set value of key
+// fruits.set("Apples", 2);
+// console.log(fruits.set("Apples",3330));
 
-// typedof
+// // typedof
 
-console.log(typeof fruits); 
+// console.log(typeof fruits); 
 
-console.log(fruits instanceof Map);
+// console.log(fruits instanceof Map);
 
-const trang = new Map();
-// set trong map
+// const trang = new Map();
+// // set trong map
 
-trang.set("Name", "Thoi");
-trang.set("Age", 19);
-trang.set("Address", "HaNoi");
+// trang.set("Name", "Thoi");
+// trang.set("Age", 19);
+// trang.set("Address", "HaNoi");
 
-for(const [key,value] of trang){
-     console.log(key+" :" + value);
+// for(const [key,value] of trang){
+//      console.log(key+" :" + value);
 
-}
-// size trong map
+// }
+// // size trong map
 
-console.log(trang.size);
+// console.log(trang.size);
 
-// delete trong map
+// // delete trong map
 
-trang.delete("Name");
+// trang.delete("Name");
 
-for(const [key,value] of trang){
-    console.log(key +" : " + value);
-}
+// for(const [key,value] of trang){
+//     console.log(key +" : " + value);
+// }
 
 // clear trong map: removed all elements in Map
 // trang.clear();
 //  trang.size();
 // has trong map
 
-console.log(trang.has("dfjdfkdj"))
+// console.log(trang.has("dfjdfkdj"))
 
+// console.log("/n");
+
+// trang.forEach((key,value) => {
+//     console.log(key +" :" + value);
+// })
+
+
+// const trang = new Map();
+// // set trong map
+
+// trang.set("Name", "Thoi");
+// trang.set("Age", 19);
+// trang.set("Address", "HaNoi");
+
+// math.groupBy() methods
+
+// const fruits = [
+//     {name:"Apples",price: 500},
+//     {name:"Oranges", price: 300},
+//     {name:"Bananas", price: 200}
+
+// ];
+
+// function myCallBack({price}){
+//     return price >= 300 ?"Ok" :"Low";
+// }
+// // console.log(resuft);
+// const resuft = Map.groupBy(fruits,myCallBack);
+
+// let text = "";
+// for(const x of resuft.get("Ok")){
+//     text += x.name + " : " + x.price +"/n";
+// }
+// console.log(text);
